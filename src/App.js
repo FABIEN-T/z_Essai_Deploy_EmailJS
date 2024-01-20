@@ -10,7 +10,7 @@ export const App = () => {
   const { isOpen, openModal, closeModal } = useModal()
   // const errors = formState.errors
   const form = useRef()
-  const sendEmail = () => {
+  const sendEmail = (e) => {
     // e.preventDefault();
 
     emailjs.sendForm(
@@ -34,7 +34,7 @@ export const App = () => {
         onSubmit={handleSubmit(sendEmail)}
         className="form"
       >
-        <label htmlFor="firstName">firstname</label>
+        <label htmlFor="firstName">Prénom</label>
         <input
           type="text"
           name="firstname"
@@ -72,7 +72,7 @@ export const App = () => {
         </div>
         
 
-        <label htmlFor="lastName">lastname</label>
+        <label htmlFor="lastName">Nom</label>
         <input
           type="text"
           name="lastname"
