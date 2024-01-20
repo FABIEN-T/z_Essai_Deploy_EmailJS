@@ -109,7 +109,7 @@ export const App = () => {
             )}
           </div>
 
-        <label htmlFor="email">Email</label>
+        <label htmlFor="email">Votre Email</label>
         <input
           type="email"
           name="email"
