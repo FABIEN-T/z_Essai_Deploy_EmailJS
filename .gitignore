@@ -1,2 +1,3 @@
-.env.local
+.env.download
 .vscode/*
+node_modules
